@@ -33,7 +33,7 @@ pipeline {
         label 'ans'
       }
       steps {
-        ansiblePlaybook credentialsId: 'tomanscred',
+        ansiblePlaybook credentialsId: 'ubuntu',
           disableHostKeyChecking: true,
           installation: 'ansible',
           inventory: 'hosts',
